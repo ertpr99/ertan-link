@@ -1,0 +1,98 @@
+/* CENTERED MOBILE LAYOUT (DESKTOP FIX) */
+
+body {
+  margin: 0;
+  background: #050505;
+  display: flex;
+  justify-content: center;
+}
+
+/* main container */
+.page {
+  width: 100%;
+  max-width: 480px;
+  background: #050505;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+/* blur fade */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #050505);
+  backdrop-filter: blur(6px);
+}
+
+/* CONTENT */
+.hero-content {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 38px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.socials a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+/* SECTION */
+.release-section {
+  padding: 25px 20px;
+}
+
+.release-section h2 {
+  color: white;
+}
+
+/* DESKTOP ONLY */
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .page {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 80px rgba(0,0,0,0.6);
+  }
+}
