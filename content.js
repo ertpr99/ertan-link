@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   artistName: "Ertan Osman",
-  heroImage: "assets/images/hero.jpg",
+  heroImage: "assets/images/hero.png",
   socialLinks: {
     spotify: "https://open.spotify.com/artist/16YgBN2PhClwkzVvyA94y1",
     instagram: "https://www.instagram.com/ertan_osmanov?igsh=MWI1eXQ0cWN3NGtzaw==",
